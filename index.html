@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Le Monument disparu</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <style>
+    body { margin:0; background:#111; overflow:hidden; }
+    model-viewer { width:100vw; height:100vh; --poster-color: transparent; }
+    h1 { position:absolute; top:10px; left:20px; color:white; font-family:sans-serif; z-index:2; }
+  </style>
+</head>
+<body>
+  <h1>Le [Nom du monument] — reconstitution 3D</h1>
+  <model-viewer
+    src="halle_lille_1424.glb"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    exposure="1"
+    ar
+    alt="Modélisation du monument disparu">
+  </model-viewer>
+</body>
+</html>
